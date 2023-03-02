@@ -1,20 +1,26 @@
 import {House, User, Gear} from 'phosphor-react'
 import './NavStyle.css'
 
-type NavProps ={
-    type: 'navbar-menu'
-}
 
-export function Nav(props:NavProps){
+
+export function Nav(){
 
     return(
         <>
             
        
-         <nav className={props.type}>
-        <House size={25}/>
-        <User size={25}/>
-        <Gear size={25}/>
+         <nav className='navbar-menu'>
+        <a title='Inicio' href='#'>
+            <House size={25}/>
+        </a>
+
+        <a title='Perfil' href='#'>
+            <User size={25}/>
+        </a>
+
+        <a title='configurações' href="#">
+            <Gear size={25}/>
+        </a>
          </nav>  
       
         </>
