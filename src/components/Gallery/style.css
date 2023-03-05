@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gallery img{
+    height: 50%;
+    width: 100%;
+}
+
+.gallery p{
+    color: white;
+}
+
+.gallery h3{
+    color: rgb(4, 138, 82);
+}
+.botoes{
+    background-color: rgb(26, 24, 24);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+

@@ -8,7 +8,7 @@ export const movies = [
         "duration": "1h 47m",
         "parentalRating": "12",
         "images": {
-            "background": "https://www.themoviedb.org/t/p/w500_and_h282_face/1DBDwevWS8OhiT3wqqlW7KGPd6m.jpg",
+            "background": "https://www.themoviedbthemoviedb.org/t/p/w500_and_h282_face/1DBDwevWS8OhiT3wqqlW7KGPd6m.jpg",
             "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/53AC95HTGvFYA8ZRkGgeYo7lBRo.jpg"
         }
     },
