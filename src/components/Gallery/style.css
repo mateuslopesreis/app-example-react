@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,10 +10,6 @@
     gap: 5px;
 }
 
-.gallery img{
-    height: 50%;
-    width: 100%;
-}
 
 .gallery p{
     color: white;
@@ -22,10 +18,26 @@
 .gallery h3{
     color: rgb(4, 138, 82);
 }
+
+ */
+
+
+ .gallery img{
+    height: 65%;
+   
+}
+
+.gallery h3{
+    
+    word-wrap:break-word;
+    color: white;
+}
+
+
 .botoes{
     background-color: rgb(26, 24, 24);
     color: white;
     padding: 5px;
+    
     border-radius: 5px;
 }
-

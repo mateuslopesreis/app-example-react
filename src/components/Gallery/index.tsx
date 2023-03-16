@@ -14,16 +14,24 @@ export function Gallery(){
     function handleInput(){
             
           
-            console.log(movies.length)
-          /* if(movies.length>15){ */
-            console.log('deu')
-          
-            setListar(listar+1);
+/*             console.log()
+ */           if(listar<(movies.length-1)){ 
+                setListar(listar+1);
+            }else{
+                setListar(0)
+            }
+            
           
     }
 
     function handleInput2(){
-        setListar(listar-1)
+        if(listar==0){
+            setListar(movies.length-1)
+        }else{
+            setListar(listar-1)
+        }
+        
+        
   }
 
   

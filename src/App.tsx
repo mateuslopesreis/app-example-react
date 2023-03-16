@@ -9,12 +9,19 @@ import { Login } from './pages/Login'
 import { Register } from './pages/Register'
 import { StatesExample } from './pages/StatesExample'
 import { Teste } from './pages/Teste'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div id="App">
-      <Gallery/>
-       <Nav />
+      <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/Gallery' element={<Gallery/>}/>
+            
+          </Routes>
+          <Nav />
+       </BrowserRouter>
     </div>
   )
 }
