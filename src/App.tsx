@@ -10,6 +10,9 @@ import { Register } from './pages/Register'
 import { StatesExample } from './pages/StatesExample'
 import { Teste } from './pages/Teste'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { Agenda } from './components/Agenda'
+
+
 
 function App() {
   return (
@@ -18,7 +21,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Gallery' element={<Gallery/>}/>
-            
+            <Route path='/Agenda' element={<Agenda/>}/>
           </Routes>
           <Nav />
        </BrowserRouter>

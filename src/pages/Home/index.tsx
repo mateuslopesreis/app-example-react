@@ -17,9 +17,9 @@ export function Home(){
             <main>
                 
                 <Menu>
-                    
+                <Link to='/Agenda'>
                     <MenuItem icon={<AddressBook size={24}/>} text="Agenda"/>
-                    
+                </Link>
                     
                     <Link to='/Gallery'>
                     <MenuItem icon={<ImageSquare size={24}/>} text="Galeria"/>
