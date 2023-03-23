@@ -1,27 +1,24 @@
 import './style.css'
-type CartaoProps = {
+import { Contact } from '../../Types'
+/* type CartaoProps = {
     nome: string,
-    email: String
-    
+    email: String   
+} */
+
+type ContactCardProps ={
+    contactData: Contact
 }
-
-
-export function Cartao({nome,email}:CartaoProps){
-
-    
+export function Cartao({contactData}:ContactCardProps){
+const {name,email,picture} = contactData
     return(
     <>
-      
-     
-<section className="grid">
-    <img src={"https://randomuser.me/api/portraits/men/29.jpg"}/>
-   <div className='informacoes'>
-    {nome}
-    {email}
-    </div>
-</section>
-
-
+        <div className="cartaoContatos">
+            <img src={picture.medium}/>
+            <div className='informacoes'>
+               <h2>{name.first}</h2>
+              <p>{email}</p>
+             </div>
+        </div>
     </>
     )
 }

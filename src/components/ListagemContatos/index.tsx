@@ -1,3 +1,4 @@
+import './style.css'
 
 type ListagemContatosProps ={
     children:React.ReactNode
@@ -5,8 +6,11 @@ type ListagemContatosProps ={
 
 export function ListagemContatos({children}:ListagemContatosProps){
     return(
-        <div className="lista">
-                {children}
-            </div>
+        <>
+            <section className='listagemContatos'>
+                    {children}
+            </section>
+ 
+        </>
     )
 }

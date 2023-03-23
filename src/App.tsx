@@ -10,7 +10,7 @@ import { Register } from './pages/Register'
 import { StatesExample } from './pages/StatesExample'
 import { Teste } from './pages/Teste'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Agenda } from './components/Agenda'
+import { Agenda } from './pages/Agenda'
 
 
 
