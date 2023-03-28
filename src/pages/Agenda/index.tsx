@@ -36,12 +36,14 @@ export function Agenda(){
     <input  type="search" className="barra_pesquisa" placeholder="Localizar"/>
        
            <ListagemContatos>
+           
            {
-            contacts.map(contact=>{
-                return <ContactData={contact}/>
+            contacts.map(contact => {
+              return <Cartao contactData={contact} />
             })
-           }
-                 {/* <Cartao nome="Mateus" email={'lopes@gmail.com'}></Cartao>  */}
+          }
+        
+           
                 
           </ListagemContatos>
     </main>
@@ -51,7 +53,3 @@ export function Agenda(){
     
 }
 
-
-/* component list ---(Children:React.reactnode)
-
-dentro outro Componente --- que vai ser os cartões */
