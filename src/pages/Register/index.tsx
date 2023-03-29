@@ -1,4 +1,4 @@
-import Button from "../../components/Button";
+import Button from "../../components/ButtonUI";
 import { Title } from "../../components/Title";
 
 

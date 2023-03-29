@@ -1,5 +1,5 @@
 import { AddressBook, ImageSquare } from 'phosphor-react'
-import Button from '../../components/Button'
+import Button from '../../components/ButtonUI'
 import { Menu } from '../../components/Menu'
 import { MenuItem } from '../../components/MenuItem'
 import { Title } from '../../components/Title'
@@ -24,6 +24,7 @@ export function Home(){
                     <Link to='/Gallery'>
                     <MenuItem icon={<ImageSquare size={24}/>} text="Galeria"/>
                     </Link>
+                    
                 </Menu>
              </main>
     </>

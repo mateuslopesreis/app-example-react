@@ -1,6 +1,6 @@
 import './style.css'
 import { Contact } from '../../Types'
-import Button from '../Button'
+import Button from '../ButtonUI'
 /* type CartaoProps = {
     nome: string,
     email: String   
@@ -18,7 +18,7 @@ const {name,email,picture} = contactData
             <div className='informacoes'>
                <h2>{name.first}</h2>
               <p>{email}</p>
-              <Button text='Detalhes' type='primary'/>
+              <Button variant="contained">Detalhes</Button>
              </div>
         </div>
     </>

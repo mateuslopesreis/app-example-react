@@ -1,5 +1,5 @@
 import './App.css'
-import Button from './components/Button'
+import Button from './components/ButtonUI'
 import { Formulario } from './components/Formulario'
 import { Gallery } from './components/Gallery'
 import { Nav } from './components/Nav'
