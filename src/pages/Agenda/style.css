@@ -15,7 +15,7 @@ h2{
 }
 
 main{
-    background-color: white;
+    background-color: rgb(128, 128, 207);
     border-radius: 8px;
 }
 /* clip-path: circle(); */

@@ -33,7 +33,7 @@ export function Agenda(){
     <Title text="Agenda de contatos"></Title>
     </header>
     <main>
-    <input  type="search" className="barra_pesquisa" placeholder="Localizar"/>
+    <input type="search" className="barra_pesquisa" placeholder="Localizar"/>
        
            <ListagemContatos>
            
