@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { movies } from './data'
 import './style.css'
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 export function Gallery(){
     console.log('renderizou')
@@ -45,8 +47,12 @@ export function Gallery(){
             <p>Duração: </p><h3>{movie.duration}</h3>
             
             
-            <button className='botoes' onClick={handleInput}>Anterior</button>
-            <button className='botoes'onClick={handleInput2}>Próxima</button>
+           {/*  <button className='botoes' onClick={handleInput}>Anterior</button> */}
+           
+            <Button onClick={handleInput}>Anterior</Button>
+            <Button onClick={handleInput}>Proximo</Button>
+
+            {/* <button className='botoes'onClick={handleInput2}>Próxima</button> */}
             </section>
             
         </>

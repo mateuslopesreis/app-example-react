@@ -11,6 +11,7 @@ import { StatesExample } from './pages/StatesExample'
 import { Teste } from './pages/Teste'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Agenda } from './pages/Agenda'
+import { GalleryPage } from './pages/GalleryPages'
 
 
 
@@ -20,7 +21,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/Gallery' element={<Gallery/>}/>
+            <Route path='/Gallery' element={<GalleryPage/>}/>
             <Route path='/Agenda' element={<Agenda/>}/>
           </Routes>
           <Nav />

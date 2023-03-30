@@ -4,18 +4,16 @@ import { Menu } from '../../components/Menu'
 import { MenuItem } from '../../components/MenuItem'
 import { Title } from '../../components/Title'
 import {Link} from 'react-router-dom'
+import { Base } from '../../layout/base'
 /* import {} from 'phosphor-react' */
 
 
 export function Home(){
 
     return(
-    <>
-        <header>
-                <Title text='Bem vindo'/>
-        </header>
-            <main>
-                
+      
+        <Base appBarTitle="Dashboard">
+
                 <Menu>
                 <Link to='/Agenda'>
                     <MenuItem icon={<AddressBook size={24}/>} text="Agenda"/>
@@ -26,8 +24,8 @@ export function Home(){
                     </Link>
                     
                 </Menu>
-             </main>
-    </>
+        </Base>
+   
     )
 
 }

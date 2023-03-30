@@ -18,6 +18,7 @@ export function StatesExample(){
         <>
             <h1>State Example</h1>
             <input onInput={handleInput} className='inputName' type='text'/>
+            
             <h1>{name}</h1>
         </>
     )
