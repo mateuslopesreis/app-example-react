@@ -15,6 +15,12 @@ export function Agenda(){
     const [isLoanding, setIsLoanding] = useState<Boolean>(false)
     const [contacts, setContacs]= useState<Contact[]>([])
  
+    const filteredContacts = ()=>{
+        //fazer a busca
+        //criar um filter por nome
+    }
+
+
     useEffect(()=>{
         async function listContacts(){
             setIsLoanding(true)
@@ -43,7 +49,7 @@ export function Agenda(){
            
            {
             contacts.map(contact => {
-              return <Cartao contactData={contact} />
+              return <Cartao Key={contact.login.uuid} contactData={contact} />
             })}     
           </ListagemContatos>
             )
