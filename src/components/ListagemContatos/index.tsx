@@ -1,3 +1,5 @@
+import { CssBaseline } from '@mui/material'
+import { List } from '@mui/material/List'
 import './style.css'
 
 type ListagemContatosProps ={
@@ -6,11 +8,15 @@ type ListagemContatosProps ={
 
 export function ListagemContatos({children}:ListagemContatosProps){
     return(
-        <>
-            <section className='listagemContatos'>
+        <List>
                     {children}
-            </section>
+            
  
-        </>
+        </List>
     )
 }
+/* 
+{/* <ListemItemText> *
+buscar TextFiedl/} */
+    
+{/* <CssBaseline></CssBaseline> */}
