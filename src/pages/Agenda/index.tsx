@@ -24,6 +24,8 @@ export function Agenda(){
         //criar um filter por nome
     }
  
+    
+
     useEffect(()=>{
         async function listContacts(){
             setIsLoanding(true)
@@ -52,7 +54,9 @@ export function Agenda(){
            
            {
             contacts.map(contact => {
-                return <Cartao key={contact.login.uuid} contactData={contact} />
+
+              return <Cartao key={contact.login.uuid} contactData={contact} />
+
             })}     
           </ListagemContatos>
             )
