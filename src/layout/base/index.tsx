@@ -16,7 +16,19 @@ export function Base({children,appBarTitle}:BaseLayoutProps){
             </Toolbar>
         </AppBar>
 
-        <Box >
+        <Box 
+        display='flex'
+        flexDirection='column'
+        alignItems='center'
+
+        padding={1}
+        mt={6}
+        sx={{
+          bgcolor: "white",
+          width:"100%"
+        }}
+        minHeight={100}
+        >
                 {children}
         </Box>
         </>

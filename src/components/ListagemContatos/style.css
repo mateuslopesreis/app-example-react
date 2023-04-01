@@ -1,6 +1,6 @@
-.listagemContatos{
+.listandoContatos{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: rgb(128, 128, 207);
+    background-color: white;
 }

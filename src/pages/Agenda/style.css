@@ -6,14 +6,6 @@ h2{
     color: white;
 }
 
-.barra_pesquisa{
-    outline: none;
-    width: 100%;
-    border-radius: 8px;
-    border: 0;
-    padding: 10px;
-}
-
 main{
     background-color: rgb(128, 128, 207);
     border-radius: 8px;

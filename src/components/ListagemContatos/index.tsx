@@ -1,6 +1,4 @@
-import { CssBaseline } from '@mui/material'
-import { List } from '@mui/material/List'
-import './style.css'
+import { List } from '@mui/material'
 
 type ListagemContatosProps ={
     children:React.ReactNode
@@ -8,11 +6,15 @@ type ListagemContatosProps ={
 
 export function ListagemContatos({children}:ListagemContatosProps){
     return(
-        <List>
+
+        <section className='listandoContatos'>
+        <List sx={{
+        }}>
                     {children}
             
  
         </List>
+        </section>
     )
 }
 /* 

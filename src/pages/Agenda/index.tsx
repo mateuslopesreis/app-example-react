@@ -5,15 +5,24 @@ import { ListagemContatos } from "../../components/ListagemContatos";
 import './style.css'
 import { getContacts } from "../Services/api";
 import { Contact } from "../../Types";
-import {CircularProgress, TextField} from "@mui/material"
+import {CircularProgress, TextField, makeStyles} from "@mui/material"
 import { Base } from "../../layout/base";
 
 
 
 export function Agenda(){
+    
+    
+
     const[search,setSearch] = useState('')
     const [isLoanding, setIsLoanding] = useState<Boolean>(false)
     const [contacts, setContacs]= useState<Contact[]>([])
+
+
+    const filteredContacts = ()=>{
+        //fazer a busca
+        //criar um filter por nome
+    }
  
     useEffect(()=>{
         async function listContacts(){
@@ -34,16 +43,16 @@ export function Agenda(){
  */
     return(
        <Base appBarTitle={'Agenda de Contatos'}>
-    <input type="search" className="barra_pesquisa" placeholder="Localizar"/>
+            <TextField  variant='outlined' fullWidth />
 
         {
-            isLoanding? <CircularProgress /> : 
+            isLoanding?( <CircularProgress />) : 
             (
                 <ListagemContatos>
            
            {
             contacts.map(contact => {
-              return <Cartao contactData={contact} />
+                return <Cartao key={contact.login.uuid} contactData={contact} />
             })}     
           </ListagemContatos>
             )
