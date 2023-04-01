@@ -19,12 +19,14 @@ export function Agenda(){
     const [contacts, setContacs]= useState<Contact[]>([])
 
 
-    const filteredContacts = ()=>{
+    const lowerBusca = search.toLowerCase()
+
+    const filteredContacts = contacts.filter((contact)=> contact.name.first.toLowerCase().includes(lowerBusca))
         //fazer a busca
         //criar um filter por nome
-    }
- 
     
+ 
+    console.log(search)
 
     useEffect(()=>{
         async function listContacts(){
@@ -45,15 +47,16 @@ export function Agenda(){
  */
     return(
        <Base appBarTitle={'Agenda de Contatos'}>
-            <TextField  variant='outlined' fullWidth />
-
+            <TextField value={search} onChange={(e)=>setSearch(e.target.value)} variant='outlined' fullWidth />
+                
         {
+           
             isLoanding?( <CircularProgress />) : 
             (
                 <ListagemContatos>
            
            {
-            contacts.map(contact => {
+            filteredContacts.map(contact => {
 
               return <Cartao key={contact.login.uuid} contactData={contact} />
 
