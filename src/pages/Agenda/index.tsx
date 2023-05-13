@@ -47,8 +47,8 @@ export function Agenda(){
  */
     return(
        <Base appBarTitle={'Agenda de Contatos'}>
-            <TextField value={search} onChange={(e)=>setSearch(e.target.value)} variant='outlined' fullWidth />
-                
+            <TextField value={search} onChange={(e)=>setSearch(e.target.value)} variant='outlined' label="pesquisar" fullWidth />
+           {/*  <TextField variant='outlined' fullWidth /=> */}
         {
            
             isLoanding?( <CircularProgress />) : 

@@ -3,6 +3,7 @@ import { movies } from './data'
 import './style.css'
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import {ListItemText, Typography} from '@mui/material'
 
 export function Gallery(){
     console.log('renderizou')
@@ -43,8 +44,11 @@ export function Gallery(){
             <section className="gallery">
             
             <img src={movie.images.poster}></img>
-            <p>Titulo: </p><h3>{movie.title}</h3>
-            <p>Duração: </p><h3>{movie.duration}</h3>
+
+            <ListItemText primary={<Typography variant='h5'>{movie.title}</Typography>} secondary={
+                <Typography>{movie.duration}</Typography>
+            }>
+            </ListItemText>
             
             
            {/*  <button className='botoes' onClick={handleInput}>Anterior</button> */}
